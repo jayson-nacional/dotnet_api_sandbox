@@ -9,33 +9,27 @@
 		}
 	},
 	"profiles": {
-		"http": {
+		"dev": {
 			"commandName": "Project",
 			"dotnetRunMessages": true,
 			"launchBrowser": true,
 			"launchUrl": "swagger",
-			"applicationUrl": "http://localhost:5044",
+			"applicationUrl": "http://localhost:55221; http://localhost:55222",
 			"environmentVariables": {
 				"ASPNETCORE_ENVIRONMENT": "Development",
-				"UseDeveloperExceptionPage": "false"
+				"UseDeveloperExceptionPage": "true",
+				"AllowedOrigins": "*"
 			}
 		},
-		"https": {
+		"staging": {
 			"commandName": "Project",
 			"dotnetRunMessages": true,
 			"launchBrowser": true,
 			"launchUrl": "swagger",
-			"applicationUrl": "https://localhost:7155;http://localhost:5044",
+			"applicationUrl": "http://localhost:55222",
 			"environmentVariables": {
-				"ASPNETCORE_ENVIRONMENT": "Development"
-			}
-		},
-		"IIS Express": {
-			"commandName": "IISExpress",
-			"launchBrowser": true,
-			"launchUrl": "swagger",
-			"environmentVariables": {
-				"ASPNETCORE_ENVIRONMENT": "Development"
+				"ASPNETCORE_ENVIRONMENT": "Staging",
+				"UseDeveloperExceptionPage": "true"
 			}
 		}
 	}
